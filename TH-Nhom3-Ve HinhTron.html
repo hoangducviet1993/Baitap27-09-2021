@@ -45,10 +45,11 @@
     }
     function createMultipleCircle() {
         for (let i = 0; i < 10; i++) {
-            let color = getRandomColor();
             let x = Math.random()*300;
             let y =Math.random()*300;
-            let circle = new Circle(x ,y, 30,color);
+            let radius = Math.floor(Math.random() * 80);
+            let color = getRandomColor();
+            let circle = new Circle(x ,y, radius,color);
             circle.daw();
         }
     }
